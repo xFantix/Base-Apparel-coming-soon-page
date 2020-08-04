@@ -55,21 +55,94 @@ body{
     position: relative;
 }
 .app__left__forum__input{
-    width: 300px;
+    width: 70%;
     height:45px;
     background-color: transparent;
     border-radius: 22px;
     border: 2px solid rgb(185, 182, 182);
     padding-left: 30px;
+    outline: none;
+    box-shadow: none;
+    
+}
+.app__left__forum__input:focus{
+  border: 2px solid hsl(0, 36%, 70%);
 }
 .app__left__form__button{
         width: 90px;
         height: 45px;
+        top: 0;
+        right: 25%;
         border-radius: 20px;
         border: none;
         color: white;
-        background-image: linear-gradient( 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+        background-image: linear-gradient(  hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
         cursor: pointer;
         position: absolute;
-        left: 40%;
+        
+        font-size: 20px;
+        
 }
+
+.app__left__form__warning--none{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color:hsl(0, 93%, 68%) ;
+    border-radius: 50%;
+    left: 35%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    color: white;
+    font-size:20px;
+    opacity: 0;
+    transform: 1s linear;
+    
+}
+.app__left__form__message--none{
+    position: absolute;
+    font-size: 10px;
+    left: 2%;
+    top: 115%;
+    color: hsl(0, 36%, 70%);
+    opacity: 0;
+    transform: 1s linear;
+}
+.--active{
+    opacity: 1;
+    
+}
+
+.app__left__logo--mobile{
+    display: none;
+}
+
+@media screen and (max-width:950px)
+{
+    .app__left{
+        width: 100%;
+        text-align: center;
+        padding: 0px 0px;
+    }
+    .app__right{
+        display: none;
+    }
+    .app__left__forum__input{
+        width: 60%;
+    }   
+    .app__left__form__button{
+        right: 13%;
+    }
+    .app__left__logo--mobile{
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+        background-position: center;
+        background-size: cover cover;
+    }
+    .app__left__logo{
+        margin: 65px 0px 50px 0px;
+    }
+}
+

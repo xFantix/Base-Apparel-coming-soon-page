@@ -20,6 +20,10 @@
 
       <img src="./images/logo.svg" alt="logo" class="app__left__logo" />
 
+
+      <img src="./images/hero-mobile.jpg" alt="logo" class="app__left__logo--mobile" />
+
+
       <h1 class="app__left__header"><span class="app__left__header__headerSpan">We're</span></br>coming</br> soon</h1>
 
       <p class="app__left__about">Hello fellow shoppers! We're currently building our new</br> fashion soter. Add your
@@ -27,10 +31,13 @@
         up-to-date
         with</br> announcemets and our launch deals</p>
 
-      <form action="" class="app__left__form">
+      <form action="" class="app__left__form" onsubmit="return sendSubmit();" novalidate>
 
-        <input type="text" class="app__left__forum__input" placeholder="Email Adress" />
+        <input type="email" class="app__left__forum__input" placeholder="Email Adress" />
+        <div class="app__left__form__warning--none">!</div>
         <button class="app__left__form__button">></button>
+        <p class="app__left__form__message--none">Pleas provide a valide email</p>
+
 
       </form>
 
@@ -45,7 +52,7 @@
 
 
 
-
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.app{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-image: url('./images/bg-pattern-desktop.svg');
+    background-size: cover;
+}
+
+.app__left{
+    width: 60%;
+    padding: 0px 50px;
+    
+}
+.app__right{
+    width: 40%;
+}
+.app__left__logo{
+    margin: 65px 0px 140px 0px;
+}
+.app__left__header__headerSpan{
+   
+    font-weight: 200;
+    letter-spacing: 20px;
+    color: hsl(0, 36%, 70%);
+}
+
+.app__left__header{
+    font-size: 60px;
+    text-transform: uppercase;
+    color: hsl(0, 6%, 24%);
+    letter-spacing: 15px;
+}
+.app__left__about{
+    margin-top: 40px;
+    color: hsl(0, 36%, 70%);
+}

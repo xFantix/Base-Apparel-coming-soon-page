@@ -19,10 +19,14 @@ body{
 
 .app__left{
     width: 60%;
-    padding: 0px 50px;
+    padding: 0px 150px;
+
     
 }
 .app__right{
+    background-image: url('./images/hero-desktop.jpg');
+    background-size: cover;
+    background-position: center center;
     width: 40%;
 }
 .app__left__logo{
@@ -44,4 +48,28 @@ body{
 .app__left__about{
     margin-top: 40px;
     color: hsl(0, 36%, 70%);
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+.app__left__form{
+    position: relative;
+}
+.app__left__forum__input{
+    width: 300px;
+    height:45px;
+    background-color: transparent;
+    border-radius: 22px;
+    border: 2px solid rgb(185, 182, 182);
+    padding-left: 30px;
+}
+.app__left__form__button{
+        width: 90px;
+        height: 45px;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        background-image: linear-gradient( 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+        cursor: pointer;
+        position: absolute;
+        left: 40%;
 }

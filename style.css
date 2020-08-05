@@ -90,7 +90,7 @@ body{
     height: 20px;
     background-color:hsl(0, 93%, 68%) ;
     border-radius: 50%;
-    left: 35%;
+    left: 45%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
@@ -143,6 +143,12 @@ body{
     }
     .app__left__logo{
         margin: 65px 0px 50px 0px;
+    }
+    .app__left__form__warning--none{
+        left: 60%;
+    }
+    .app__left__form__message--none{
+        left: 24%;
     }
 }
 

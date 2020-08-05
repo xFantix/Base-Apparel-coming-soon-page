@@ -2,6 +2,9 @@ const input = document.querySelector('.app__left__forum__input');
 
 const button = document.querySelector('.app__left__form__button');
 
+
+
+
 const sendSubmit = (e) => {
 
     const input = document.querySelector('.app__left__forum__input');
@@ -12,6 +15,7 @@ const sendSubmit = (e) => {
         e.preventDefault();
         warning.classList.add('--active');
         message.classList.add('--active');
+
         return false;
     }
     else {
@@ -21,3 +25,5 @@ const sendSubmit = (e) => {
 
 
 }
+
+button.addEventListener('click', sendSubmit);
